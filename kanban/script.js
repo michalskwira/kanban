@@ -33,7 +33,7 @@ return str;
 
 // CONSTRUCTION COLUMN ELEMENT
 	$column.append($columnTitle)
-		append($columnDelete)
+		.append($columnDelete)
 		.append($columnAddCard)
 		.append($columnCardList);
 
@@ -71,7 +71,7 @@ return str;
 
 // COMBINING BLOCKS AND RETURNING THE CARD
 	$card.append($cardDelete)
-		append($cardDescription);
+		.append($cardDescription);
 
 	return $card;
 	}
@@ -102,7 +102,7 @@ placeholder: 'card-placeholder'
 }
 
 $('.create-column')
-click(function(){
+.click(function(){
 var name = prompt('Enter a column name');
 var column = new Column(name);
 board.addColumn(column);
